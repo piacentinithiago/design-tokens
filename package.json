@@ -1,0 +1,18 @@
+{
+  "name": "@piacentinithiago/design-tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:piacentinithiago/design-tokens.git",
+  "author": "Thiago Piacentini <piacentinithiago83@gmail.com>",
+  "description": "A collection of design tokens for consistent UI styling",
+  "license": "MIT",
+  "scripts": {
+    "build": "style-dictionary build --config tokens.config.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.0.0"
+  }
+}
