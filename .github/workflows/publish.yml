@@ -11,11 +11,17 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }} # Publica apenas se o build foi bem-sucedido
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Print workflow_run ID and Repository
+        run: |
+          echo "Workflow Run ID triggering this job: ${{ github.event.workflow_run.id }}"
+          echo "Repository from workflow_run: ${{ github.event.workflow_run.repository.owner }}/${{ github.event.workflow_run.repository.name }}"
+          echo "Artifact name: design-tokens" # Apenas para confirmar
 
       - name: Download build artifacts from original workflow run
         uses: actions/download-artifact@v4
