@@ -13,6 +13,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
+    "adm-zip": "^0.5.16",
     "style-dictionary": "^5.0.0"
   }
 }
