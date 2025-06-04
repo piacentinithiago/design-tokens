@@ -11,56 +11,19 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }} # Publica apenas se o build foi bem-sucedido
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Download build artifacts from original workflow run
-        uses: actions/github-script@v6
-        id: download_artifact_script
+        uses: actions/download-artifact@v4
         with:
-          script: |
-            const { owner, repo } = context.repo;
-            const runId = github.event.workflow_run.id;
-            const artifactName = 'design-tokens';
-
-            console.log(`Attempting to download artifact '${artifactName}' from run ID: ${runId}`);
-
-            const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
-              owner,
-              repo,
-              run_id: runId,
-            });
-
-            const matchArtifact = artifacts.data.artifacts.find(artifact => artifact.name === artifactName);
-
-            if (!matchArtifact) {
-              core.setFailed(`Artifact '${artifactName}' not found in run ID ${runId}`);
-              return;
-            }
-
-            const download = await github.rest.actions.downloadArtifact({
-              owner,
-              repo,
-              artifact_id: matchArtifact.id,
-              archive_format: 'zip',
-            });
-
-            const fs = require('fs');
-            const path = require('path');
-            constAdmZip = require('adm-zip');
-
-            const zip = new AdmZip(Buffer.from(download.data));
-            const targetPath = 'build';
-            zip.extractAllTo(targetPath, true);
-            console.log(`Artifact extracted to ${targetPath}`);
-
-            console.log('Contents of extracted artifact:');
-            require('fs').readdirSync(targetPath).forEach(file => {
-              console.log(file);
-            });
+          name: design-tokens
+          run-id: ${{ github.event.workflow_run.id }}
+          repository: ${{ github.event.workflow_run.repository.owner }}/${{ github.event.workflow_run.repository.name }}
+          path: build/
 
       - name: Set up Node.js for publish
         uses: actions/setup-node@v4
@@ -74,5 +37,5 @@ jobs:
 
       - name: Publish to GitHub Packages
         run: |
-
+          ls -la build/
           npm publish --access public
