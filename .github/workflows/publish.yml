@@ -33,10 +33,11 @@ jobs:
 
       - name: Pack and publish
         run: |
-          yarn build
+          echo "📦 Packing..."
           yarn pack
           tar -xzf *.tgz
           cd package
+          echo "🚀 Publishing..."
           yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
