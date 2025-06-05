@@ -18,7 +18,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
+          ref: master
           persist-credentials: true # necessário para poder dar push
+          fetch-depth: 0 # necessário para obter o histórico completo e poder fazer push de commits
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
