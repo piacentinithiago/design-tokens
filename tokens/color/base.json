@@ -8,6 +8,9 @@
     },
     "danger": {
       "value": "#FF3333"
+    },
+    "success": {
+      "value": "#33FF57"
     }
   }
 }
