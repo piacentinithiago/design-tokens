@@ -5,6 +5,9 @@
     },
     "secondary": {
       "value": "#33C1FF"
+    },
+    "danger": {
+      "value": "#FF3333"
     }
   }
 }
