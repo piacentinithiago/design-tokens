@@ -40,7 +40,7 @@ jobs:
           git diff --staged --quiet || git commit -m "chore(tokens): auto-update build [skip ci]"
           git push origin HEAD
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
 
       - name: Pack and publish
         run: |
