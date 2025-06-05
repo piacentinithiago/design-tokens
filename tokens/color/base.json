@@ -19,10 +19,10 @@
       "value": "#33FFB8"
     },
     "light": {
-      "value": "#F0F0F0"
+      "value": "#ffffff"
     },
     "dark": {
       "value": "#333333"
-    },
+    }
   }
 }
