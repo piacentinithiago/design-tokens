@@ -1,15 +1,15 @@
 {
   "size": {
-    "small": {
+    "sm": {
       "value": "8px"
     },
-    "medium": {
+    "md": {
       "value": "16px"
     },
-    "large": {
+    "lg": {
       "value": "24px"
     },
-    "xlarge": {
+    "xl": {
       "value": "32px"
     }
   }
