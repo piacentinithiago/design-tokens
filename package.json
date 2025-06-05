@@ -1,7 +1,9 @@
 {
   "name": "@piacentinithiago/design-tokens",
-  "version": "1.0.5",
-  "files": ["build/css"],
+  "version": "1.0.6",
+  "files": [
+    "build/css"
+  ],
   "main": "build/css/variables.css",
   "style": "build/index.css",
   "repository": "git@github.com:piacentinithiago/design-tokens.git",
