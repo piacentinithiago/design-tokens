@@ -1,7 +1,10 @@
 {
   "name": "@piacentinithiago/design-tokens",
   "version": "1.0.0",
-  "main": "build/index.js",
+  "files": [
+    "build/css/",
+    "build/scss/"
+  ],
   "repository": "git@github.com:piacentinithiago/design-tokens.git",
   "author": "Thiago Piacentini <piacentinithiago83@gmail.com>",
   "description": "A collection of design tokens for consistent UI styling",
