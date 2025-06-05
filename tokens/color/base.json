@@ -17,6 +17,9 @@
     },
     "info": {
       "value": "#33FFB8"
+    },
+    "light": {
+      "value": "#F0F0F0"
     }
   }
 }
