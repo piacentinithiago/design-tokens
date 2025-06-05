@@ -50,22 +50,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Se estiver em detached HEAD (tag), faz checkout da master para poder commitar e pushar o build
-          if [ "$(git symbolic-ref -q --short HEAD)" = "" ]; then
-            echo "⚠️ Detached HEAD detectado, fazendo checkout da master"
-            git checkout master
-          else
-            echo "✅ Branch ativa detectada"
-          fi
+          git checkout master
 
           git add build/
 
-          # Só faz commit se houve mudança no build
           git diff --staged --quiet || git commit -m "chore(build): atualiza arquivos gerados [skip ci]"
 
-          # Pusha para a branch atual
-          CURRENT_BRANCH=$(git symbolic-ref -q --short HEAD)
-          git push origin "HEAD:refs/heads/$CURRENT_BRANCH"
+          git push origin master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
