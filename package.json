@@ -5,6 +5,7 @@
     "build/css/",
     "build/scss/"
   ],
+  "style": "build/css/variables.css",
   "repository": "git@github.com:piacentinithiago/design-tokens.git",
   "author": "Thiago Piacentini <piacentinithiago83@gmail.com>",
   "description": "A collection of design tokens for consistent UI styling",
