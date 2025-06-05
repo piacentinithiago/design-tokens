@@ -1,13 +1,28 @@
 {
   "color": {
     "primary": {
-      "value": "#FF5733"
+      "value": "#f0f0f0"
     },
     "secondary": {
       "value": "#33C1FF"
     },
     "danger": {
       "value": "#FF3333"
+    },
+    "success": {
+      "value": "#33FF57"
+    },
+    "warning": {
+      "value": "#FFB833"
+    },
+    "info": {
+      "value": "#33FFB8"
+    },
+    "light": {
+      "value": "#ffffff"
+    },
+    "dark": {
+      "value": "#333333"
     }
   }
 }
