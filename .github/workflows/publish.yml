@@ -11,6 +11,8 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Permite push para o repositório
 
     steps:
       - name: Checkout repo
