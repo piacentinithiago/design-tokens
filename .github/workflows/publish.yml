@@ -30,8 +30,14 @@ jobs:
         run: yarn install
 
       # O build está no repositório, mas rodamos por segurança (caso alguém esqueça)
-      - name: Rebuild tokens (garantia)
-        run: yarn build || npm run build
+      - name: Rebuild tokens
+        run: |
+            echo "📁 Conteúdo antes do build:"
+            ls -R .
+            echo "🔨 Rodando build..."
+            yarn build
+            echo "📁 Conteúdo depois do build:"
+            ls -R build/
 
       # Publica a versão já com build no repositório
       - name: Publish to GitHub Packages
