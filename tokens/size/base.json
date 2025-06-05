@@ -8,6 +8,9 @@
     },
     "large": {
       "value": "24px"
+    },
+    "xlarge": {
+      "value": "32px"
     }
   }
 }
