@@ -11,6 +11,9 @@
     },
     "success": {
       "value": "#33FF57"
+    },
+    "warning": {
+      "value": "#FFB833"
     }
   }
 }
