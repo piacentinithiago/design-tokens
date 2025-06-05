@@ -1,7 +1,7 @@
 {
   "name": "@piacentinithiago/design-tokens",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
   "repository": "git@github.com:piacentinithiago/design-tokens.git",
   "author": "Thiago Piacentini <piacentinithiago83@gmail.com>",
   "description": "A collection of design tokens for consistent UI styling",
@@ -13,7 +13,6 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
-    "adm-zip": "^0.5.16",
     "style-dictionary": "^5.0.0"
   }
 }

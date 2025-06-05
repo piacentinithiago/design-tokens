@@ -1,47 +1,37 @@
-name: Publish Design Tokens to GitHub Packages
+name: Publish design tokens
 
 on:
-  workflow_run:
-    workflows: ["Build Design Tokens"]
-    types:
-      - completed
-    branches:
-      - master
+  push:
+    tags:
+      - 'v*.*.*'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Print workflow_run ID and Repository
-        run: |
-          echo "Workflow Run ID triggering this job: ${{ github.event.workflow_run.id }}"
-          echo "Repository from workflow_run: ${{ github.event.workflow_run.repository.owner }}/${{ github.event.workflow_run.repository.name }}"
-          echo "Artifact name: design-tokens" # Apenas para confirmar
-
-      - name: Download build artifacts from original workflow run
-        uses: actions/download-artifact@v4
-        with:
-          name: design-tokens
-          run-id: ${{ github.event.workflow_run.id }}
-          repository: ${{ github.event.workflow_run.repository.owner }}/${{ github.event.workflow_run.repository.name }}
-          path: build/
-
-      - name: Set up Node.js for publish
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
-          registry-url: 'https://npm.pkg.github.com/'
+          node-version: 22
+          registry-url: https://npm.pkg.github.com/
+          scope: '@piacentinithiago'
 
-      - name: Authenticate with GitHub Packages
+      - name: Authenticate .npmrc
         run: |
-          npm config set //npm.pkg.github.com/:_authToken ${{ secrets.NPM_TOKEN }}
+          echo "@piacentinithiago:registry=https://npm.pkg.github.com/" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PUBLISH_TOKEN }}" >> .npmrc
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build tokens
+        run: yarn build
 
       - name: Publish to GitHub Packages
-        run: |
-          ls -la build/
-          npm publish --access public
+        run: yarn publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}

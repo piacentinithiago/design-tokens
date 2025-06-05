@@ -14,7 +14,7 @@ module.exports = {
       transformGroup: 'scss',
       buildPath: 'build/scss/',
       files: [{
-        destination: 'variables.scss',
+        destination: '_variables.scss',
         format: 'scss/variables'
       }]
     }

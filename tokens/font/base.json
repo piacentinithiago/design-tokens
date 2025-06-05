@@ -1,0 +1,10 @@
+{
+  "font": {
+    "base": {
+      "value": "Arial, sans-serif"
+    },
+    "heading": {
+      "value": "Georgia, serif"
+    }
+  }
+}
