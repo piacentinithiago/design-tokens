@@ -52,7 +52,9 @@ jobs:
 
           # Só faz commit se houve mudança no build
           git diff --staged --quiet || git commit -m "chore(build): atualiza arquivos gerados [skip ci]"
-          git push origin HEAD
+
+          BRANCH_NAME=$(git for-each-ref --format='%(refname:short)' "$(git symbolic-ref -q HEAD || echo refs/heads/$(git rev-parse --short HEAD))")
+          git push origin "HEAD:refs/heads/$BRANCH_NAME"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
