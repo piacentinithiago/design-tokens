@@ -1,6 +1,6 @@
 // tokens.config.js
 module.exports = {
-  source: ['tokens/**/*.json'],
+  source: ['tokens/tokens.json'],
   platforms: {
     css: {
       transformGroup: 'css',
