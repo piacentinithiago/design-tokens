@@ -14,13 +14,13 @@
   --color-success: #198754;
   --color-danger: #dc3545;
   --color-warning: #ffc107;
-  --color-info: #0dcaf0;
+  --color-info: #00bebe;
   --background-primary: #0d6efd;
   --background-secondary: #6c757d;
   --background-success: #198754;
   --background-danger: #dc3545;
   --background-warning: #ffc107;
-  --background-info: #0dcaf0;
+  --background-info: #00bebe;
   --border-radius-sm: 2;
   --border-radius-md: 4;
   --border-radius-lg: 8;
@@ -30,7 +30,7 @@
   --border-success: 1px solid #198754;
   --border-danger: 1px solid #dc3545;
   --border-warning: 1px solid #ffc107;
-  --border-info: 1px solid #0dcaf0;
+  --border-info: 1px solid #00bebe;
   --border-width-thin: 1rem;
   --border-width-regular: 2rem;
   --border-width-thick: 3rem;
