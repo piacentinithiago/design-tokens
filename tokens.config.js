@@ -4,6 +4,7 @@ module.exports = {
   platforms: {
     css: {
       transformGroup: 'css',
+      transforms: ['size/px'],
       buildPath: 'build/css/',
       files: [{
         destination: 'variables.css',
@@ -12,6 +13,7 @@ module.exports = {
     },
     scss: {
       transformGroup: 'scss',
+      transforms: ['size/px'],
       buildPath: 'build/scss/',
       files: [{
         destination: '_variables.scss',
