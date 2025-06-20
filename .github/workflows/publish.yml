@@ -30,13 +30,16 @@ jobs:
       - name: Build tokens
         run: yarn build
 
-      # Criação automática de tag (básico; depois podemos automatizar com semantic-release)
-      - name: Create tag
-        id: tag
+      - name: Create tag if not exists
         run: |
           VERSION=$(node -p "require('./package.json').version")
-          git tag v$VERSION
-          git push origin v$VERSION
+          git fetch --tags
+          if git tag | grep -q "v$VERSION"; then
+            echo "Tag v$VERSION already exists - skipping tag creation."
+          else
+            git tag v$VERSION
+            git push origin v$VERSION
+          fi
 
       - name: Publish to GitHub Packages
         run: yarn publish --access public
