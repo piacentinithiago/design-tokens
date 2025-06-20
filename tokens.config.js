@@ -4,7 +4,7 @@ module.exports = {
   platforms: {
     scss: {
       transformGroup: 'scss',
-      transforms: ['size/px'],
+      // transforms: ['size/px'],
       buildPath: 'build/scss/',
       files: [{
         destination: '_variables.scss',
@@ -13,13 +13,12 @@ module.exports = {
     },
     android: {
       transformGroup: 'android',
-      transforms: ['size/px'],
+      // transforms: ['size/pt'],
       buildPath: 'build/android/',
       files: [{
         destination: 'tokens.xml',
         format: 'android/resources'
       }]
     },
-
   }
 };
