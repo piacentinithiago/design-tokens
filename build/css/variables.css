@@ -4,7 +4,7 @@
 
 :root {
   --dimension-scale: 2px;
-  --dimension-xs: 5px;
+  --dimension-xs: 4px;
   --dimension-sm: 6px;
   --dimension-md: 10px;
   --dimension-lg: 16px;
@@ -35,7 +35,7 @@
   --border-width-thin: 1px;
   --border-width-regular: 2px;
   --border-width-thick: 3px;
-  --spacing-xs: 5px;
+  --spacing-xs: 4px;
   --spacing-sm: 6px;
   --spacing-md: 10px;
   --spacing-lg: 16px;

@@ -3,7 +3,7 @@
  */
 
 export const DimensionScale = "2px";
-export const DimensionXs = "5px";
+export const DimensionXs = "4px";
 export const DimensionSm = "6px";
 export const DimensionMd = "10px";
 export const DimensionLg = "16px";
@@ -34,7 +34,7 @@ export const BorderInfo = "1px solid #48ffff";
 export const BorderWidthThin = "1px";
 export const BorderWidthRegular = "2px";
 export const BorderWidthThick = "3px";
-export const SpacingXs = "5px";
+export const SpacingXs = "4px";
 export const SpacingSm = "6px";
 export const SpacingMd = "10px";
 export const SpacingLg = "16px";

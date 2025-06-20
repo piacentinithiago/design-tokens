@@ -5,7 +5,7 @@
 -->
 <resources>
   <dimen name="dimension_scale">32px</dimen>
-  <dimen name="dimension_xs">80px</dimen>
+  <dimen name="dimension_xs">64px</dimen>
   <dimen name="dimension_sm">96px</dimen>
   <dimen name="dimension_md">160px</dimen>
   <dimen name="dimension_lg">256px</dimen>
@@ -36,7 +36,7 @@
   <dimen name="border_width_thin">16px</dimen>
   <dimen name="border_width_regular">32px</dimen>
   <dimen name="border_width_thick">48px</dimen>
-  <string name="spacing_xs">80px</string>
+  <string name="spacing_xs">64px</string>
   <string name="spacing_sm">96px</string>
   <string name="spacing_md">160px</string>
   <string name="spacing_lg">256px</string>
