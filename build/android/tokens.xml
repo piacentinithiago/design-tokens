@@ -4,12 +4,12 @@
   Do not edit directly, this file was auto-generated.
 -->
 <resources>
-  <dimen name="dimension_scale">32px</dimen>
-  <dimen name="dimension_xs">64px</dimen>
-  <dimen name="dimension_sm">96px</dimen>
-  <dimen name="dimension_md">160px</dimen>
-  <dimen name="dimension_lg">256px</dimen>
-  <dimen name="dimension_xl">384px</dimen>
+  <dimen name="dimension_scale">32.00dp</dimen>
+  <dimen name="dimension_xs">64.00dp</dimen>
+  <dimen name="dimension_sm">96.00dp</dimen>
+  <dimen name="dimension_md">160.00dp</dimen>
+  <dimen name="dimension_lg">256.00dp</dimen>
+  <dimen name="dimension_xl">384.00dp</dimen>
   <color name="color_primary">#ff0d6efd</color>
   <color name="color_secondary">#ff6c757d</color>
   <color name="color_success">#ff198754</color>
@@ -33,12 +33,12 @@
   <string name="border_danger">1px solid #ffdc3545</string>
   <string name="border_warning">1px solid #ffffc107</string>
   <string name="border_info">1px solid #ff48ffff</string>
-  <dimen name="border_width_thin">16px</dimen>
-  <dimen name="border_width_regular">32px</dimen>
-  <dimen name="border_width_thick">48px</dimen>
-  <string name="spacing_xs">64px</string>
-  <string name="spacing_sm">96px</string>
-  <string name="spacing_md">160px</string>
-  <string name="spacing_lg">256px</string>
-  <string name="spacing_xl">384px</string>
+  <dimen name="border_width_thin">16.00dp</dimen>
+  <dimen name="border_width_regular">32.00dp</dimen>
+  <dimen name="border_width_thick">48.00dp</dimen>
+  <string name="spacing_xs">64.00dp</string>
+  <string name="spacing_sm">96.00dp</string>
+  <string name="spacing_md">160.00dp</string>
+  <string name="spacing_lg">256.00dp</string>
+  <string name="spacing_xl">384.00dp</string>
 </resources>
