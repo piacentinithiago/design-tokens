@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+-->
+<resources>
+  <dimen name="dimension_scale">32px</dimen>
+  <dimen name="dimension_xs">80px</dimen>
+  <dimen name="dimension_sm">96px</dimen>
+  <dimen name="dimension_md">160px</dimen>
+  <dimen name="dimension_lg">256px</dimen>
+  <dimen name="dimension_xl">384px</dimen>
+  <color name="color_primary">#ff0d6efd</color>
+  <color name="color_secondary">#ff6c757d</color>
+  <color name="color_success">#ff198754</color>
+  <color name="color_danger">#ffdc3545</color>
+  <color name="color_warning">#ffffc107</color>
+  <color name="color_info">#ff48ffff</color>
+  <color name="color_dark">#ff333333</color>
+  <color name="background_primary">#ff0d6efd</color>
+  <color name="background_secondary">#ff6c757d</color>
+  <color name="background_success">#ff198754</color>
+  <color name="background_danger">#ffdc3545</color>
+  <color name="background_warning">#ffffc107</color>
+  <color name="background_info">#ff48ffff</color>
+  <string name="border_radius_sm">2</string>
+  <string name="border_radius_md">4</string>
+  <string name="border_radius_lg">8</string>
+  <string name="border_none">none</string>
+  <string name="border_primary">1px solid #ff0d6efd</string>
+  <string name="border_secondary">1px solid #ff6c757d</string>
+  <string name="border_success">1px solid #ff198754</string>
+  <string name="border_danger">1px solid #ffdc3545</string>
+  <string name="border_warning">1px solid #ffffc107</string>
+  <string name="border_info">1px solid #ff48ffff</string>
+  <dimen name="border_width_thin">16px</dimen>
+  <dimen name="border_width_regular">32px</dimen>
+  <dimen name="border_width_thick">48px</dimen>
+  <string name="spacing_xs">80px</string>
+  <string name="spacing_sm">96px</string>
+  <string name="spacing_md">160px</string>
+  <string name="spacing_lg">256px</string>
+  <string name="spacing_xl">384px</string>
+</resources>
