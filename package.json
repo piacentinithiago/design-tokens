@@ -1,6 +1,6 @@
 {
   "name": "@piacentinithiago/design-tokens",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "files": [
     "build/_variables.scss",
     "build/tokens.xml"
@@ -18,12 +18,9 @@
     "build": "style-dictionary build --config tokens.config.js"
   },
   "publishConfig": {
-  "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "style-dictionary": "^5.0.0"
   }
 }
-
-
-
