@@ -1,6 +1,6 @@
 {
   "name": "@piacentinithiago/design-tokens",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "files": [
     "build/_variables.scss",
     "build/tokens.xml"
