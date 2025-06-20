@@ -1,15 +1,11 @@
 {
   "name": "@piacentinithiago/design-tokens",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "files": [
-    "build/scss/_variables.scss",
-    "build/android/tokens.xml"
+    "build/scss/",
+    "build/android/"
   ],
   "main": "build/scss/_variables.scss",
-  "style": [
-    "build/_variables.scss",
-    "build/tokens.xml"
-  ],
   "repository": "git@github.com:piacentinithiago/design-tokens.git",
   "author": "Thiago Piacentini <piacentinithiago83@gmail.com>",
   "description": "A collection of design tokens for consistent UI styling",
