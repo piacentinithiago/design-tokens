@@ -4,11 +4,11 @@
 
 :root {
   --dimension-scale: 2rem;
-  --dimension-xs: 4rem;
-  --dimension-sm: 4rem * 2rem;
-  --dimension-md: 4rem * 2rem * 2rem;
-  --dimension-lg: 4rem * 2rem * 2rem * 2rem;
-  --dimension-xl: 4rem * 2rem * 2rem * 2rem * 2rem;
+  --dimension-xs: 5rem;
+  --dimension-sm: 5rem * 2rem;
+  --dimension-md: 5rem * 2rem * 2rem;
+  --dimension-lg: 5rem * 2rem * 2rem * 2rem;
+  --dimension-xl: 5rem * 2rem * 2rem * 2rem * 2rem;
   --color-primary: #0d6efd;
   --color-secondary: #6c757d;
   --color-success: #198754;
@@ -35,9 +35,9 @@
   --border-width-thin: 1rem;
   --border-width-regular: 2rem;
   --border-width-thick: 3rem;
-  --spacing-xs: 4rem;
-  --spacing-sm: 4rem * 2rem;
-  --spacing-md: 4rem * 2rem * 2rem;
-  --spacing-lg: 4rem * 2rem * 2rem * 2rem;
-  --spacing-xl: 4rem * 2rem * 2rem * 2rem * 2rem;
+  --spacing-xs: 5rem;
+  --spacing-sm: 5rem * 2rem;
+  --spacing-md: 5rem * 2rem * 2rem;
+  --spacing-lg: 5rem * 2rem * 2rem * 2rem;
+  --spacing-xl: 5rem * 2rem * 2rem * 2rem * 2rem;
 }
