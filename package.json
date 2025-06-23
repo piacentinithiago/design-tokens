@@ -2,8 +2,9 @@
   "name": "@piacentinithiago/design-tokens",
   "version": "1.3.1",
   "files": [
-    "build/scss/",
-    "build/android/"
+    "build/",
+    "components/",
+    "dist/"
   ],
   "main": "tokens.config.js",
   "repository": "git@github.com:piacentinithiago/design-tokens.git",
@@ -11,12 +12,15 @@
   "description": "A collection of design tokens for consistent UI styling",
   "license": "MIT",
   "scripts": {
-    "build": "style-dictionary build --config tokens.config.js"
+    "build": "yarn build:tokens && yarn build:styles",
+    "build:tokens": "style-dictionary build --config tokens.config.js",
+    "build:styles": "sass --load-path=. components/_index.scss dist/styles.css --no-source-map"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
+    "sass": "^1.89.2",
     "style-dictionary": "^5.0.0"
   }
 }

@@ -1,0 +1,44 @@
+@use 'sass:color';
+@use 'build/scss/_variables.scss' as *;
+
+.btn {
+  border-radius: $border-radius-md;
+  background: $color-primary;
+  color: #fff;
+  padding: 0.5em 1.5em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+  &.btn-primary {
+    background: $color-primary;
+
+    :hover {
+      background: color.adjust($color-primary, $lightness: -10%);
+    }
+  }
+
+  &.btn-secondary {
+    background: $color-secondary;
+
+    :hover {
+      background: color.adjust($color-secondary, $lightness: -10%);
+    }
+  }
+
+  &.btn-danger {
+    background: $color-danger;
+
+    :hover {
+      background: color.adjust($color-danger, $lightness: -10%);
+    }
+  }
+
+  &.btn-success {
+    background: $color-success;
+
+    :hover {
+      background: color.adjust($color-success, $lightness: -10%);
+    }
+  }
+}
