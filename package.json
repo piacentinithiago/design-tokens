@@ -1,6 +1,6 @@
 {
   "name": "@piacentinithiago/design-tokens",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "files": [
     "build/scss/",
     "build/android/"
