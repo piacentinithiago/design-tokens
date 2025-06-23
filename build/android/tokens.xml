@@ -10,7 +10,7 @@
   <dimen name="dimension_md">160.00dp</dimen>
   <dimen name="dimension_lg">256.00dp</dimen>
   <dimen name="dimension_xl">384.00dp</dimen>
-  <color name="color_primary">#ff0d6efd</color>
+  <color name="color_primary">#ff0768fa</color>
   <color name="color_secondary">#ff6c757d</color>
   <color name="color_success">#ff198754</color>
   <color name="color_danger">#ffdc3545</color>
@@ -18,7 +18,7 @@
   <color name="color_info">#ff48ffff</color>
   <color name="color_dark">#ff333333</color>
   <color name="color_light">#ffffffff</color>
-  <color name="background_primary">#ff0d6efd</color>
+  <color name="background_primary">#ff0768fa</color>
   <color name="background_secondary">#ff6c757d</color>
   <color name="background_success">#ff198754</color>
   <color name="background_danger">#ffdc3545</color>
@@ -30,7 +30,7 @@
   <string name="border_radius_md">4</string>
   <string name="border_radius_lg">8</string>
   <string name="border_none">none</string>
-  <string name="border_primary">1px solid #ff0d6efd</string>
+  <string name="border_primary">1px solid #ff0768fa</string>
   <string name="border_secondary">1px solid #ff6c757d</string>
   <string name="border_success">1px solid #ff198754</string>
   <string name="border_danger">1px solid #ffdc3545</string>
