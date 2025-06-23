@@ -10,6 +10,7 @@
   <dimen name="dimension_md">160.00dp</dimen>
   <dimen name="dimension_lg">256.00dp</dimen>
   <dimen name="dimension_xl">384.00dp</dimen>
+  <color name="color_default">#ff6c757d</color>
   <color name="color_primary">#ff0768fa</color>
   <color name="color_secondary">#ff6c757d</color>
   <color name="color_success">#ff198754</color>
