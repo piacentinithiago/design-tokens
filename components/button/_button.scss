@@ -4,11 +4,19 @@
 .btn {
   border-radius: $border-radius-md;
   background: $color-primary;
-  color: #fff;
+  color: $color-light;
   padding: 0.5em 1.5em;
   font-weight: bold;
   border: none;
   cursor: pointer;
+
+  &.btn-default {
+    background: $color-default;
+
+    :hover {
+      background: color.adjust($color-default, $lightness: -10%);
+    }
+  }
 
   &.btn-primary {
     background: $color-primary;
