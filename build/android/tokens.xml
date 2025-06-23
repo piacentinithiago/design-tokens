@@ -7,7 +7,7 @@
   <dimen name="dimension_scale">32.00dp</dimen>
   <dimen name="dimension_xs">64.00dp</dimen>
   <dimen name="dimension_sm">96.00dp</dimen>
-  <dimen name="dimension_md">96.00dp</dimen>
+  <dimen name="dimension_md">160.00dp</dimen>
   <dimen name="dimension_lg">256.00dp</dimen>
   <dimen name="dimension_xl">384.00dp</dimen>
   <color name="color_primary">#ff0d6efd</color>
@@ -39,7 +39,7 @@
   <dimen name="border_width_thick">48.00dp</dimen>
   <string name="spacing_xs">64.00dp</string>
   <string name="spacing_sm">96.00dp</string>
-  <string name="spacing_md">96.00dp</string>
+  <string name="spacing_md">160.00dp</string>
   <string name="spacing_lg">256.00dp</string>
   <string name="spacing_xl">384.00dp</string>
 </resources>
