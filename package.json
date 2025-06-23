@@ -5,7 +5,7 @@
     "build/scss/",
     "build/android/"
   ],
-  "main": "build/scss/_variables.scss",
+  "main": "tokens.config.js",
   "repository": "git@github.com:piacentinithiago/design-tokens.git",
   "author": "Thiago Piacentini <piacentinithiago83@gmail.com>",
   "description": "A collection of design tokens for consistent UI styling",
