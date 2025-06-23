@@ -41,4 +41,12 @@
       background: color.adjust($color-success, $lightness: -10%);
     }
   }
+
+  &.btn-warning {
+    background: $color-warning;
+
+    :hover {
+      background: color.adjust($color-warning, $lightness: -10%);
+    }
+  }
 }
