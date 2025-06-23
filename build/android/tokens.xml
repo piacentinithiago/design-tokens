@@ -24,6 +24,7 @@
   <color name="background_danger">#ffdc3545</color>
   <color name="background_warning">#ffffc107</color>
   <color name="background_info">#ff48ffff</color>
+  <color name="background_dark">#ff333333</color>
   <string name="border_radius_sm">2</string>
   <string name="border_radius_md">4</string>
   <string name="border_radius_lg">8</string>
