@@ -27,9 +27,9 @@
   <color name="background_info">#ff48ffff</color>
   <color name="background_dark">#ff333333</color>
   <color name="background_light">#ffffffff</color>
-  <string name="border_radius_sm">2</string>
-  <string name="border_radius_md">4</string>
-  <string name="border_radius_lg">8</string>
+  <string name="border_radius_sm">10px</string>
+  <string name="border_radius_md">20px</string>
+  <string name="border_radius_lg">30px</string>
   <string name="border_none">none</string>
   <string name="border_primary">1px solid #ff0768fa</string>
   <string name="border_secondary">1px solid #ff6c757d</string>
