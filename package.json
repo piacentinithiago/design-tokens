@@ -2,7 +2,8 @@
   "name": "@piacentinithiago/design-tokens",
   "version": "1.2.5",
   "files": [
-    "build/scss/"
+    "build/scss/",
+    "build/android/"
   ],
   "main": "build/scss/_variables.scss",
   "repository": "git@github.com:piacentinithiago/design-tokens.git",
